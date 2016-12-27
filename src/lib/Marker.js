@@ -238,6 +238,7 @@ export default _.flowRight(
   },
 
   render() {
+    console.log(this.props)
     const {
       children,
     } = this.props;
