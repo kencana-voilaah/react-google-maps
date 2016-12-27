@@ -237,6 +237,13 @@ export default _.flowRight(
     }
   },
 
+  shouldComponentUpdate(nextProps) {
+    if (nextProps.children === this.props.children) {
+      return false;
+    }
+    return true;
+  },
+
   render() {
     console.log(this.props)
     const {
